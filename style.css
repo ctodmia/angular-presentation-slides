@@ -1,3 +1,6 @@
+.container {
+	background-color: red;
+}
 .col-md-6 {
 	border: solid;
 	padding: 10px;
@@ -13,7 +16,8 @@ li {
 }
 
 .col-md-8{
-	border: solid;
+	/*border: solid;*/
 	width: 600px;
 	height: 450px;
+	box-shadow: 10px 10px 10px #888888;
 }
