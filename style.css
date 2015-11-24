@@ -11,3 +11,9 @@ li {
 	display: inline-block;
 
 }
+
+.col-md-8{
+	border: solid;
+	width: 600px;
+	height: 450px;
+}
