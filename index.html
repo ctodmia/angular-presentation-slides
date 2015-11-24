@@ -24,6 +24,7 @@
 			<label>Content:</label></br>
 			<textarea type="text" ng-model="content"></textarea>
 			<button ng-click="addSlide()"><a href="#" class="btn">Submit</a></button>
+			<button ng-click="updateSlide()"><a href="#" class="btn">Update</a></button>
 		</form>
 	</div>
 
@@ -62,8 +63,23 @@
 
 	<div class="col-md-2">
 		<div ng-repeat="queue in slide">
-			{{queue.title}}
-			{{queue.content}}
+			<ul>
+				<li>
+					{{queue.title}}
+					
+				</li>
+				<li>
+					<a href="#" class="btn btn-default" ng-click="editSlide(queue.id)">Edit</a>
+				</li>
+
+				<li>
+					<a href="#" class="btn btn-default" ng-click="deleteSlide(queue.id)">Delete</a>
+				</li>
+					
+			</ul>
+
+
+
 		</div>
 	</div>
 		
