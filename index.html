@@ -19,9 +19,12 @@
 	<div class="row">
 		
 	<div class="col-md-6">
-		<label>Title:</label><input ng-model="title" />
-		<label>Content:</label></br>
-		<textarea ng-model="content"></textarea>
+		<form ng-submit="addSlide()">
+			<label>Title:</label><input type="text" ng-model="title" />
+			<label>Content:</label></br>
+			<textarea type="text" ng-model="content"></textarea>
+			<button ng-click="addSlide()"><a href="#" class="btn">Submit</a></button>
+		</form>
 	</div>
 
 

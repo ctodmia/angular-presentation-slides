@@ -3,10 +3,18 @@ var myapp = angular.module('myapp', [])
 
 myapp.controller('SlidesController', function($scope){
 	
-	console.log('this is a slide')
 	$scope.slide = [
 
-	]
+	];
+	console.log('this', $scope.slide)
+
+	$scope.addSlide = function(){
+		console.log('this is a slide', $scope.slide);
+		$scope.slide.push({title: $scope.title, content: $scope.content});
+
+	};
+
+
 
 })
 
