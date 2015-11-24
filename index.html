@@ -22,18 +22,40 @@
 		<div class="row">
 			
 			<div class="col-md-1 collection">
-				
+				<div ng-repeat="queue in slide">
+					<ul>
+						<li>
+							{{queue.title}}
+							
+						</li>
+						<li>
+							<a href="#" class="btn btn-default" ng-click="editSlide(queue.id)">Edit</a>
+						</li>
+
+						<li>
+							<a href="#" class="btn btn-default" ng-click="deleteSlide(queue.id)">Delete</a>
+						</li>
+							
+					</ul>
+				</div>
 			</div>
 
 			<div class="col-md-4">
 
 			<div class="inner">
-				slide
+				{{title}}
+				</br></br>
+				{{content}}
 			</div>
 
 			<div class="text">
-				<textarea>Text area</textarea>
-				text area
+				<form ng-submit="addSlide()">
+					<label>Title:</label><input type="text" ng-model="title" />
+					<label>Content:</label></br>
+					<textarea type="text" ng-model="content"></textarea>
+					<button ng-click="addSlide()"><a href="#" class="btn">Submit</a></button>
+					<button ng-click="updateSlide()"><a href="#" class="btn">Update</a></button>
+				</form>
 			</div>
 
 

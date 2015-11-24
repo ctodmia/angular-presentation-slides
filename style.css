@@ -51,6 +51,7 @@ li {
 	height: 400px;
 	width: 400px;
 	border: solid;
+	margin: 20px ;
 }
 input {
 	color: black;
@@ -58,4 +59,5 @@ input {
 
 textarea {
 	color: black;
+	margin: 10px;
 }
