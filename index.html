@@ -11,10 +11,48 @@
 	<link rel="stylesheet" href="style.css">
 
 </head>
-<body ng-controller="ProductController">
+<body ng-controller="SlidesController">
 
 <!-- this is where we start refactoring our CRUD from basicallyCRUD -->
-<div class="container" ng-controller="SlidesController">
+
+<!-- <div class="container"> -->
+<div class="row">
+
+	<div class="col-md-6">
+		<div class="row">
+			
+			<div class="col-md-1 collection">
+				
+			</div>
+
+			<div class="col-md-4">
+
+			<div class="inner">
+				slide
+			</div>
+
+			<div class="text">
+				<textarea>Text area</textarea>
+				text area
+			</div>
+
+
+				
+			</div>
+			
+		</div>
+		{{title}}
+		</br></br>
+		{{content}}
+	</div>
+
+	<div class="col-md-6">
+		{{title}}
+		</br></br>
+		{{content}}
+	</div>
+	
+</div>
 
 	<div class="row">
 		
@@ -38,7 +76,7 @@
 
 
 	</div>
-	
+
 
 	<div class="row-2">
 
@@ -75,53 +113,10 @@
 		</div>
 	</div>
 		
-	</div>
 	
-</div>
+<!-- </div> -->
 
 
-
-
-<table>
-	<tr>
-		<th>Id</th>
-		<th>Name</th>
-		<th>Amout</th>	
-		<th>Delete</th>
-		<th>Edit</th>
-	</tr>
-	<tr ng-repeat="product in productList">
-		<td>{{product.id}}</td>
-		<td>{{product.name}}</td>
-		<td>{{product.amount}}</td>
-		
-		<td>
-			<a href="#" ng-click="del(product.id)">Delete</a>
-			<a href="#" ng-click="edit(product.id)">Edit</a>
-		</td>
-	
-	</tr>
-</table>
-	
-<h1>Product info</h1>
-<table>
-	<tr>
-		<td>Id: </td>
-		<td><input type="text" ng-model="id"></td>
-	</tr>
-
-	<tr>
-		<td>Name: </td>
-		<td><input type="text" ng-model="name"></td>
-	</tr>
-
-	<tr>
-		<td>Amount: </td>
-		<td><input type="text" ng-model="amount"></td>
-	</tr>
-</table>
-<span><button ng-click="update()">Update</button></span>
-<span><button ng-click="add()">Add</button></span>
 
 
 

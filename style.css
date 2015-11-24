@@ -1,12 +1,37 @@
-.container {
-	background-color: red;
+body {
+
+	background-color: black;
+	color: white;
+
+}
+.row {
+	height: 800px;
+	width: 1364px;
+	background-color: blue;
+}
+
+.col-md-1 {
+	margin: 10px 20px;
 }
 .col-md-6 {
 	border: solid;
-	padding: 10px;
+	/*margin: 10px;*/
+	/*padding: 10px;*/
+	height: 800px;
+	/*width:500px;*/
 }
-.row {
-	margin: 10px;
+
+.col-md-4{
+	border: solid;
+	background-color: red;
+	height: 700px;
+	margin-left: 20px;
+}
+
+.collection {
+	height: 750px;
+	width: 150px;
+	border: solid;
 }
 
 li {
@@ -20,4 +45,17 @@ li {
 	width: 600px;
 	height: 450px;
 	box-shadow: 10px 10px 10px #888888;
+}
+
+.inner {
+	height: 400px;
+	width: 400px;
+	border: solid;
+}
+input {
+	color: black;
+}
+
+textarea {
+	color: black;
 }
